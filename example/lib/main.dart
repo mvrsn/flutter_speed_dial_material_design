@@ -46,11 +46,11 @@ class _MyPageState extends State<MyPage> {
 
   Widget _buildFloatingActionButton() {
     final TextStyle customStyle = TextStyle(inherit: false, color: Colors.black);
-    final icons = [ 
+    final icons = [
       SpeedDialAction(
-        //backgroundColor: Colors.green, 
-        //foregroundColor: Colors.yellow, 
-        child: Icon(Icons.mode_edit), 
+        //backgroundColor: Colors.green,
+        //foregroundColor: Colors.yellow,
+        child: Icon(Icons.mode_edit),
         label: Text('Edit any item', style: customStyle)),
       SpeedDialAction(child: Icon(Icons.date_range), label: Text('Choose the date', style: customStyle)),
       SpeedDialAction(child: Icon(Icons.list), label: Text('Menu', style: customStyle)),
@@ -67,6 +67,8 @@ class _MyPageState extends State<MyPage> {
       isDismissible: true,
       //backgroundColor: Colors.yellow,
       //foregroundColor: Colors.blue,
+      //labelShadowColor: Colors.blue,
+      //labelBackgroundColor: Colors.yellow,
     );
   }
 
